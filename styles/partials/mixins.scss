@@ -1,0 +1,12 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin gold-bar{
+  display: block;
+  margin-top: 2rem;
+  height: 1rem;
+  background-color: $gold;
+}

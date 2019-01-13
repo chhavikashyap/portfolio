@@ -1,62 +1,82 @@
-a{
-  font-family: $heading;
-  text-decoration: none;
-  text-transform: uppercase;
+html{
+  font-size: 0.52vh;
 }
-.nav-item > a{
-  color: $gray;
-  &:active{
-    color: $gold;
+a{
+  text-decoration: none;
+  font-family: $link;
+}
+
+/***landing page***/
+.name{
+  font-family: $link;
+  color: $blue;
+  font-size: 5rem;
+}
+.landing-page-nav{
+  a{
+    font-size: 4rem;
+    font-weight: bold;
+    color: $blue;
   }
 }
 
-#main-page-title > p{
-  text-transform: uppercase;
-  font-size: 24px;
-  font-family: $text;
-  color: $gray;
-  letter-spacing: 8px;
+/***navigation-bar***/
+.navigation-bar{
+  font-size: 4rem;
+  a{
+    color: $gray;
+    &:hover{
+      color: $blue;
+    }
+  }
 }
-.main-page-nav-link > a{
-  font-size: 1.2em;
-  color: $gold;
+a.active{
+  font-size: 10rem;
+  color: $blue;
 }
 
-.heading{
-  font-family: $heading;
-  font-size: 2.4em;
-  font-weight: bold;
-  text-transform: uppercase;
+.home-link{
+  font-size: 4rem;
   color: $blue;
-  text-decoration: underline $gold;
+  font-family: $link;
 }
-#contact-heading{
-  color: $gold;
-  text-decoration: none;
+/***about-page***/
+.about-text{
+  font-size: 4rem;
+  line-height: 6rem;
+//  text-align: justify;
+  span{
+    font-style: italic;
+    .link{
+      color: #4067b3;
+      font-weight: bold;
+    }
+  }
 }
-#about-text{
-  font-size: 1.5em;
-  line-height: 36px;
-  text-align: justify;
+
+/***projects***/
+
+.project-title{
+  font-size: 6rem;
+  font-family: $link;
+  text-transform: none;
+  color: white;
+  font-weight: bold;
 }
-.contact-content{
-  font-family: $text;
-  font-size: 18px;
-  color: $gray;
-  letter-spacing: 1px;
-}
-.overlay-text-desc{
-  font-size: 1vw;
-  line-height: 1.4vw;
+.view-project{
   font-family: $text;
   font-style: italic;
-  text-transform: none;
-  color: white;
+  color: rgba(256,256,256,0.8);
+  font-size: 4rem;
+
 }
-.project-title{
-  font-size: 2.4vw;
-  font-fmaily: $heading;
-  text-transform: none;
-  color: white;
+
+/***contact***/
+
+.contact-info li{
+  font-family: $link;
   font-weight: bold;
+  font-size: 3.5rem;
+  padding: 2rem;
+  color: $gray;
 }

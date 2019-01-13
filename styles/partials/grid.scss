@@ -1,13 +1,12 @@
 .section-container{
-  position: relative;
-  max-width: 80%;
-  margin: 0 auto;
+  width: calc(100vw - (2* #{$vertical-margin})* 1vh);
+  margin: ($vertical-margin * 1vh) auto;
 }
 
 .container{
   max-width: 100%;
   margin: 0 auto;
-  &__row{
+  &-row{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -16,22 +15,13 @@
 
 [class*='col-'] {
   float: left;
-  padding: 0px 1.5vw;
   min-height: 1px;
-
-  &:first-child {
-    padding-left: 0px;
-  }
-
-  &:last-child {
-    padding-right: 0px;
-  }
 }
 
-$grid__cols: 12;
+$grid-cols: 12;
 
-@for $i from 1 through $grid__cols{
+@for $i from 1 through $grid-cols{
   .col-#{$i}{
-    flex-basis: (100/($grid__cols / $i))*1%;
+    flex-basis: (100/($grid-cols / $i))*1%;
   }
 }

@@ -4,65 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chhavi Kashyap</title>
+    <link rel="icon" type="image/png" href="images/favicon-logo.png">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+
   </head>
   <body>
-    <div id="main-page" class="section">
-      <div id="main-page-logo">
-        <img src="images/logo_white.png" alt="logo">
-      </div>
-      <div id="main-page-title"><p>textile designer</p></div>
-      <div id="main-page-nav" class="container__row">
-        <ul class="col-6">
-          <li class="main-page-nav-link col-2"><a href="#about">About</a></li>
-          <li class="main-page-nav-link col-2"><a href="#projects">Projects</a></li>
-          <li class="main-page-nav-link col-2"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="section-container">
-      <nav class="page-nav">
-        <div id="logo">
-          <img src="images/logo_black.png" alt="logo">
+    <div id="landing-page">
+      <div class="content section-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo"/>
         </div>
-        <div id="main-nav">
+        <div class="name">CHHAVI KASHYAP</div>
+        <img src="images/TEXTILE DESIGNER.png" class="landing-page-title"/>
+        <div class="landing-page-nav">
           <ul>
               <li class="nav-item">
-                <a href="#about">About</a>
-                <span class="nav-item-hover"></span>
+                <a href="#about">ABOUT</a>
+                <span class="hover-bar"></span>
               </li>
               <li class="nav-item">
-                <a href="#projects">Projects</a>
-                <span class="nav-item-hover"></span>
+                <a href="#projects">PROJECTS</a>
+                <span class="hover-bar"></span>
               </li>
               <li class="nav-item">
-                <a href="#contact">Contact</a>
-                <span class="nav-item-hover"></span>
+                <a href="#contact">CONTACT</a>
+                <span class="hover-bar"></span>
               </li>
-        </ul>
-      </div>
-      </nav>
-      <section class="section container container__row" id="about">
-        <div id="about-description" class="col-6">
-          <h1 id="about-heading" class="heading">About</h1>
-          <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </ul>
         </div>
-        <div id="about-picture" class="col-6"><img src="images/Chhavi_Kashyap.jpeg" alt=""></div>
+      </div>
+    </div>
+    <div>
+      <nav>
+        <div class="side-block"></div>
+        <ul class="navigation-bar">
+          <li>
+            <a href="#contact" >CONTACT</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="background-border-top"></div>
+      <div class="background-border-bottom"></div>
+      <div class="background-block-container">
+        <div class="background-block"></div>
+      </div>
+      <a href="#" class="home-link">CHHAVI KASHYAP<span class="home-link-bar"></span></a>
+      <section id="about" class="about-section section-container">
+        <div class="about container container-row">
+          <p class="about-text col-7">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+            <br/>
+            <br/>
+            <span>View my resume <span class="link">here.</span></span><br/>
+            <span class="bar"></span>
+          </p>
+          <div class="about-picture col-5"><img src="images/Chhavi_Kashyap.jpeg" alt=""></div>
+        </div>
       </section>
-
-
-      <section class="section" id="projects">
-        <div id="projects-heading"><h1 class="heading">projects</h1></div>
+      <section id="projects" class="projects-section section-container">
         <div>
-          <ul class="project-list container container__row">
+          <ul class="project-list">
             <li class="project-list-item col-4">
               <a href="https://www.behance.net/gallery/71521017/Knit-tied" target="_blank">
                 <img src="images/projects/Knit-tied/IMG_3976.jpg" class="project-image" alt="">
                 <div class="overlay">
-                  <div class="overlay-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </div>
+                  <div class="view-project">View Project</div>
+                  </div>
                 <div class="project-title">Knit-tied</div>
               </a>
             </li>
@@ -70,8 +94,7 @@
               <a href="https://www.behance.net/gallery/64007321/Laras-Lybrinth-2" target="_blank">
                 <img src="images/projects/Lara's Lybrinth/DSC_5638.jpg" class="project-image" alt="">
                 <div class="overlay">
-                  <div class="overlay-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </div>
+                  </div>
                 <div class="project-title">Lara's Lybrinth</div>
               </a>
             </li>
@@ -79,8 +102,7 @@
               <a href="https://www.behance.net/gallery/64008071/Protect-A-collection-of-cushions-and-curtains" target="_blank">
                 <img src="images/projects/Protect/cover.jpg" class="project-image" alt="">
                 <div class="overlay">
-                  <div class="overlay-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </div>
+                  </div>
                 <div class="project-title">Protect</div>
               </a>
             </li>
@@ -88,8 +110,7 @@
               <a href="" target="_blank">
                 <img src="images/projects/Lara's Lybrinth/DSC_5638.jpg" class="project-image" alt="">
                 <div class="overlay">
-                  <div class="overlay-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </div>
+                  </div>
                 <div class="project-title">Hello</div>
               </a>
             </li>
@@ -97,8 +118,7 @@
               <a href="" target="_blank">
                 <img src="images/projects/Protect/cover.jpg" class="project-image" alt="">
                 <div class="overlay">
-                  <div class="overlay-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </div>
+                  </div>
                 <div class="project-title">Hello</div>
               </a>
             </li>
@@ -106,35 +126,53 @@
               <a href="" target="_blank">
                 <img src="images/projects/Knit-tied/IMG_3976.jpg" class="project-image" alt="">
                 <div class="overlay">
-                  <div class="overlay-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </div>
+                  </div>
                 <div class="project-title">Hello</div>
+                <li class="project-list-item col-4">
+                  <a href="" target="_blank">
+                    <img src="images/projects/Lara's Lybrinth/DSC_5638.jpg" class="project-image" alt="">
+                    <div class="overlay">
+                      </div>
+                    <div class="project-title">Hello</div>
+                  </a>
+                </li>
+                <li class="project-list-item col-4">
+                  <a href="" target="_blank">
+                    <img src="images/projects/Protect/cover.jpg" class="project-image" alt="">
+                    <div class="overlay">
+                      </div>
+                    <div class="project-title">Hello</div>
+                  </a>
+                </li>
+                <li class="project-list-item col-4">
+                  <a href="" target="_blank">
+                    <img src="images/projects/Knit-tied/IMG_3976.jpg" class="project-image" alt="">
+                    <div class="overlay">
+                      </div>
+                    <div class="project-title">Hello</div>
               </a>
             </li>
           </ul>
         </div>
       </section>
-    </div>
-    <footer id="contact">
-      <div id="footer-content" class="container container__row">
-        <div id="contact-info" class="col-8">
-          <ul>
-            <h1 id="contact-heading" class="heading">contact</h1>
-            <li id="email" class="contact-content"><p>Email Id: chhavi.kashyap16@gmail.com</p></li>
-            <li id="phone" class="contact-content">Phone: 9123235888, 9555947662</li>
-            <li id="apps">
-              <ul id="app-icons-list">
-                <li class="icon"><a href="https://www.behance.net/chhavikashe3cf" target="_blank"><i class="fa fa-behance"></i></a></li>
-                <li class="icon"><a href="https://www.instagram.com/chhavi.k16/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li class="icon"><a href="https://www.facebook.com/chhavi.k16" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-              </ul>
-            </li>
+      <section id="contact" class="section-container">
+        <div class="social col-4">
+          <ul id="app-icons-list">
+            <li class="icon"><a href="https://www.behance.net/chhavikashe3cf" target="_blank"><i class="fa fa-behance"></i></a></li>
+            <li class="icon"><a href="https://www.instagram.com/chhavi.k16/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="icon"><a href="https://www.facebook.com/chhavi.k16" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
           </ul>
         </div>
-        <div id="footer-logo" class="col-4">
-          <img src="images/logo_white.png" alt="">
+        <div class="contact-info col-4">
+          <ul>
+            <li class="phone">9123235888, 9555947662</li>
+            <li class="email">chhavi.kashyap16@gmail.com</li>
+          </ul>
         </div>
-      </div>
-    </footer>
+        <div class="footer-logo col-4">
+          <img src="images/logo.png" alt="">
+        </div>
+      </section>
+    </div>
   </body>
 </html>
