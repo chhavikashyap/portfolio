@@ -1,4 +1,4 @@
-$(document).ready(function(){
+ $(document).ready(function(){
 var sections= $('section');
 var nav= $('nav');
 var nav_height= nav.outerHeight();
@@ -26,7 +26,7 @@ $(window).on('scroll',function(){
       nav.find('a').removeClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
     }
-    if(cur_pos + $(window).height() == $(document).height())
+    if(cur_pos + $(window).height() >= ($(document).height() - 50) )
     {
       nav.find('a').removeClass('active');
       nav.find('a[href="#contact"]').addClass('active');

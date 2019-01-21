@@ -29,9 +29,9 @@
       bottom: 0;
       left: 0;
       li{
-        margin: 3rem 0;
-        height: 7.2rem;
-        padding: 1px;
+        margin: 2rem 0;
+        height: 9rem;
+        padding: 1rem 0;
         position: relative;
         display: inline-block;
         clear: both;
@@ -102,7 +102,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     a{
-      transition: 500ms cubic-bezier(1,0,0,1) 0ms;
+      transition: 200ms cubic-bezier(1,0,0,1) 0ms;
     }
   }
 }
@@ -117,7 +117,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 12;
 }
 .background-border-bottom{
   height: ($vertical-margin) * 1vh;
@@ -160,7 +160,7 @@ nav{
 .background-block{
   height: 100%;
   position: absolute;
-  background-color: #f5f5f5;
+  background-color: #ececec;
   bottom: 0;
   transition: height 500ms cubic-bezier(1,0,0,1) 0ms;
 }
@@ -168,12 +168,19 @@ nav{
 
 .about-section{
   min-height: ( 100 - 2 * $vertical-margin ) * 1vh;
+  padding-top: ($vertical-margin) *1vh;
   .about{
     align-items: center;
     justify-content: space-around;
-    height: ( 100 - 2 * $vertical-margin - 1 ) * 1vh;
+    min-height: ( 100 - 2 * $vertical-margin - 1 ) * 1vh;
+    .about-text-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .about-text{
-      padding: 0 10rem 0 50rem;
+      padding: 0 10rem 0 10rem;
+      max-width: 150rem;
       .bar{
         @include gold-bar;
         width: 24rem;
@@ -218,18 +225,13 @@ nav{
       top: 20%;
     }
     .project-image{
-      width: 700px;
+      width: 580px;
       height: auto;
+      position: absolute;
+      bottom: 0;
     }
 }
 
-.heading{
-  margin: 3vh 1vw 8vh 0vw;
-}
-#projects-heading{
-  display: flex;
-  justify-content: flex-end;
-}
 .section{
   width: 100%;
   padding: 7.5vh 0;
@@ -245,7 +247,7 @@ nav{
 .project-title{
   position: absolute;
   left: 10rem;
-  top: 70%;
+  top: 60%;
   transition: 500ms cubic-bezier(1,0,0,1) 0ms;
 }
 .overlay {
@@ -257,13 +259,12 @@ nav{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: all 500ms cubic-bezier(1,0,0,1) 0ms;
+  transition: all 750ms cubic-bezier(1,0,0,1) 0ms;
   background-color: $blue;
   .view-project{
     position: absolute;
     padding: 6rem 0 6rem 10rem;
     bottom: 0;
-    background: rgba(0,0,0,0.2);
     width: 100%;
   }
 }
@@ -287,7 +288,7 @@ nav{
   }
   i{
     font-size: 24px;
-    color: $gray;
+    color: $dark-gray;
     &:hover{
       color: $gold;
     }

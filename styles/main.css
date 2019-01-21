@@ -78,9 +78,9 @@ table {
       bottom: 0;
       left: 0; }
       #landing-page .content .landing-page-nav li {
-        margin: 3rem 0;
-        height: 7.2rem;
-        padding: 1px;
+        margin: 2rem 0;
+        height: 9rem;
+        padding: 1rem 0;
         position: relative;
         display: inline-block;
         clear: both;
@@ -142,7 +142,7 @@ nav {
     flex-direction: row;
     justify-content: space-between; }
     nav .navigation-bar a {
-      transition: 500ms cubic-bezier(1, 0, 0, 1) 0ms; }
+      transition: 200ms cubic-bezier(1, 0, 0, 1) 0ms; }
 
 .view {
   left: -100vh; }
@@ -154,7 +154,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10; }
+  z-index: 12; }
 
 .background-border-bottom {
   height: 8.333vh;
@@ -196,19 +196,25 @@ nav {
 .background-block {
   height: 100%;
   position: absolute;
-  background-color: #f5f5f5;
+  background-color: #ececec;
   bottom: 0;
   transition: height 500ms cubic-bezier(1, 0, 0, 1) 0ms; }
 
 /***about-page***/
 .about-section {
-  min-height: 83.334vh; }
+  min-height: 83.334vh;
+  padding-top: 8.333vh; }
   .about-section .about {
     align-items: center;
     justify-content: space-around;
-    height: 82.334vh; }
+    min-height: 82.334vh; }
+    .about-section .about .about-text-div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .about-section .about .about-text {
-      padding: 0 10rem 0 50rem; }
+      padding: 0 10rem 0 10rem;
+      max-width: 150rem; }
       .about-section .about .about-text .bar {
         display: block;
         margin-top: 2rem;
@@ -245,15 +251,10 @@ nav {
     color: #986725;
     top: 20%; }
   .project-list-item .project-image {
-    width: 700px;
-    height: auto; }
-
-.heading {
-  margin: 3vh 1vw 8vh 0vw; }
-
-#projects-heading {
-  display: flex;
-  justify-content: flex-end; }
+    width: 580px;
+    height: auto;
+    position: absolute;
+    bottom: 0; }
 
 .section {
   width: 100%;
@@ -268,7 +269,7 @@ nav {
 .project-title {
   position: absolute;
   left: 10rem;
-  top: 70%;
+  top: 60%;
   transition: 500ms cubic-bezier(1, 0, 0, 1) 0ms; }
 
 .overlay {
@@ -280,13 +281,12 @@ nav {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: all 500ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: all 750ms cubic-bezier(1, 0, 0, 1) 0ms;
   background-color: #272244; }
   .overlay .view-project {
     position: absolute;
     padding: 6rem 0 6rem 10rem;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
     width: 100%; }
 
 /***contact-section***/
@@ -306,7 +306,7 @@ nav {
     padding: 0 2vw; }
   #app-icons-list i {
     font-size: 24px;
-    color: #585858; }
+    color: #222222; }
     #app-icons-list i:hover {
       color: #986725; }
 
@@ -348,13 +348,14 @@ a {
 .navigation-bar {
   font-size: 4rem; }
   .navigation-bar a {
-    color: #585858; }
+    color: #484848; }
     .navigation-bar a:hover {
-      color: #272244; }
+      color: #986725; }
 
 a.active {
   font-size: 10rem;
-  color: #272244; }
+  color: #272244;
+  font-weight: r00; }
 
 .home-link {
   font-size: 4rem;
@@ -363,12 +364,15 @@ a.active {
 
 /***about-page***/
 .about-text {
-  font-size: 4rem;
-  line-height: 6rem; }
+  color: #222222;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 550; }
   .about-text span {
     font-style: italic; }
     .about-text span .link {
       color: #4067b3;
+      font-family: "lora", serif;
       font-weight: bold; }
 
 /***projects***/
@@ -377,7 +381,8 @@ a.active {
   font-family: "Josefin Sans", sans-serif;
   text-transform: none;
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 2rem; }
 
 .view-project {
   font-family: "lora", serif;
@@ -391,7 +396,7 @@ a.active {
   font-weight: bold;
   font-size: 3.5rem;
   padding: 2rem;
-  color: #585858; }
+  color: #222222; }
 
 .section-container {
   width: calc(100vw - (2* 8.333)* 1vh);
