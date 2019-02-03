@@ -219,11 +219,16 @@ nav{
   overflow: hidden;
     &:hover .overlay{
       opacity: 1;
+      background: $blue;
     }
     &:hover .project-title{
       color: $gold;
       top: 20%;
     }
+    &:hover .view-project{
+      display: inline;
+    }
+
     .project-image{
       width: 580px;
       height: auto;
@@ -247,7 +252,7 @@ nav{
 .project-title{
   position: absolute;
   left: 10rem;
-  top: 60%;
+  top: 70%;
   transition: 500ms cubic-bezier(1,0,0,1) 0ms;
 }
 .overlay {
@@ -258,14 +263,16 @@ nav{
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: all 750ms cubic-bezier(1,0,0,1) 0ms;
-  background-color: $blue;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 50%, #000000 109.78%);
   .view-project{
     position: absolute;
     padding: 6rem 0 6rem 10rem;
     bottom: 0;
+    display: none;
     width: 100%;
+    transition: display 1000ms cubic-bezier(1,0,0,1) 0ms;
   }
 }
 

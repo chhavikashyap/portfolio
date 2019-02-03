@@ -10,7 +10,6 @@ $(window).on('scroll',function(){
   var cur_pos = $(this).scrollTop();
   var scroll_amt = ((cur_pos + $(this).height()) / $(document).height()) * 100 + '%';
   $(".background-block").css("width", scroll_amt);
-  console.log(scroll_amt);
   if(cur_pos> (7/8)*landing_page_height)
   {
     nav.addClass('view');
@@ -21,7 +20,7 @@ $(window).on('scroll',function(){
   sections.each(function(){
     var top = $(this).offset().top;
     var bottom = top + $(this).outerHeight();
-    if( cur_pos >= top && cur_pos <= bottom )
+    if( cur_pos >= (top-($(window).height()/2)) && cur_pos <= (bottom-($(window).height()/2)) )
     {
       nav.find('a').removeClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');

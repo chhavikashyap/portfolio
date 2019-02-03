@@ -246,10 +246,13 @@ nav {
   position: relative;
   overflow: hidden; }
   .project-list-item:hover .overlay {
-    opacity: 1; }
+    opacity: 1;
+    background: #272244; }
   .project-list-item:hover .project-title {
     color: #986725;
     top: 20%; }
+  .project-list-item:hover .view-project {
+    display: inline; }
   .project-list-item .project-image {
     width: 580px;
     height: auto;
@@ -269,7 +272,7 @@ nav {
 .project-title {
   position: absolute;
   left: 10rem;
-  top: 60%;
+  top: 70%;
   transition: 500ms cubic-bezier(1, 0, 0, 1) 0ms; }
 
 .overlay {
@@ -280,14 +283,16 @@ nav {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: all 750ms cubic-bezier(1, 0, 0, 1) 0ms;
-  background-color: #272244; }
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 50%, #000000 109.78%); }
   .overlay .view-project {
     position: absolute;
     padding: 6rem 0 6rem 10rem;
     bottom: 0;
-    width: 100%; }
+    display: none;
+    width: 100%;
+    transition: display 1000ms cubic-bezier(1, 0, 0, 1) 0ms; }
 
 /***contact-section***/
 #contact {
@@ -382,7 +387,7 @@ a.active {
   text-transform: none;
   color: white;
   font-weight: bold;
-  padding: 2rem; }
+  padding: 2rem 2rem 2rem 0; }
 
 .view-project {
   font-family: "lora", serif;
