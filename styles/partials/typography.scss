@@ -33,7 +33,7 @@ a{
 a.active{
   font-size: 10rem;
   color: $blue;
-  font-weight: r00;
+  font-weight: medium;
 }
 
 .home-link{
@@ -43,14 +43,15 @@ a.active{
 }
 /***about-page***/
 .about-text{
+  font-family: $text;
   color: $dark-gray;
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-  font-weight: 550;
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: medium;
   span{
     font-style: italic;
     .link{
-      color: #4067b3;
+      color: $blue;
       font-family: $text;
       font-weight: bold;
     }

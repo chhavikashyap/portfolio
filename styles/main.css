@@ -360,7 +360,7 @@ a {
 a.active {
   font-size: 10rem;
   color: #272244;
-  font-weight: r00; }
+  font-weight: medium; }
 
 .home-link {
   font-size: 4rem;
@@ -369,15 +369,16 @@ a.active {
 
 /***about-page***/
 .about-text {
+  font-family: "Mukta", sans-serif;
   color: #222222;
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-  font-weight: 550; }
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: medium; }
   .about-text span {
     font-style: italic; }
     .about-text span .link {
-      color: #4067b3;
-      font-family: "lora", serif;
+      color: #272244;
+      font-family: "Mukta", sans-serif;
       font-weight: bold; }
 
 /***projects***/
@@ -390,7 +391,7 @@ a.active {
   padding: 2rem 2rem 2rem 0; }
 
 .view-project {
-  font-family: "lora", serif;
+  font-family: "Mukta", sans-serif;
   font-style: italic;
   color: rgba(255, 255, 255, 0.8);
   font-size: 4rem; }
