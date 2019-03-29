@@ -244,6 +244,7 @@ nav {
 
 .project-list-item {
   position: relative;
+  border: 8px solid rgba(0, 0, 0, 0);
   overflow: hidden; }
   .project-list-item:hover .overlay {
     opacity: 1;
